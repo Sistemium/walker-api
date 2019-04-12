@@ -9,6 +9,6 @@ export default new ModelSchema({
     longitude: Number,
     routeId: String,
     timestamp: String,
+    ord: Number,
   },
-  mergeBy: ['userId', 'id'],
 }).model();
