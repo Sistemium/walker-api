@@ -5,8 +5,8 @@ export default new ModelSchema({
   schema: {
     id: String,
     userId: String,
-    latitude: Number,
-    longitude: Number,
+    latitude: String,
+    longitude: String,
     routeId: String,
     timestamp: String,
     ord: Number,
