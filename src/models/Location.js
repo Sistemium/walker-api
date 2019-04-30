@@ -8,7 +8,7 @@ export default new ModelSchema({
     latitude: String,
     longitude: String,
     routeId: String,
-    timestamp: String,
+    timestamp: Date,
     ord: Number,
   },
 }).model();
