@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "WA-REST",
+      "script": "index.js",
+      "cwd": "/var/www/walker",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "node_args": "-r esm",
+      "env": {
+        "MONGOOSE_DEBUG": "",
+        "NODE_ENV": "production",
+        "DEBUG_NAMESPACE": "stm:wa",
+        "ERROR_NAMESPACE": "stm:wa:error",
+        "DEBUG": "stm:*",
+        "DEBUG_HIDE_DATE": "true",
+        "REST_PORT": "8870",
+        "MONGO_URL": "mng2.sistemium.net/walker"
+      }
+    }
+  ]
+}

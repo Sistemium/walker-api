@@ -2,8 +2,8 @@
   "env": {
     "DEBUG": "stm:*",
     "MONGO_URL": "mng2.sistemium.net/walker",
-    "DEBUG_NAMESPACE": "stm:ae",
-    "ERROR_NAMESPACE": "stm:ae:error",
+    "DEBUG_NAMESPACE": "stm:wa",
+    "ERROR_NAMESPACE": "stm:wa:error",
     "REST_PORT": "9330"
   },
   "ignore": ["static"]
