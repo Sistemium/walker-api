@@ -1,4 +1,4 @@
-const table = db.Location3;
+const table = db.Location;
 const cursor = table.find();
 
 let ops = [];
@@ -6,12 +6,21 @@ let page = 0;
 
 while (cursor.hasNext()) {
 
-  const { timestamp, _id } = cursor.next();
+  const { timestamp, latitude, longitude, routeId, ord, id, cts, ts } = cursor.next();
 
   ops.push({
-    updateOne: {
-      filter: { _id },
-      update: { $set: { userId: "3F8936C6-7F9D-48C0-BD11-9FBD1A186499" } },
+    insertOne: {
+      document: {
+        userId: "84DF8774-7BE9-49DF-A6DF-D87304A586C1",
+        timestamp,
+        latitude,
+        longitude,
+        routeId,
+        ord,
+        id,
+        cts,
+        ts,
+      },
     },
   });
 
